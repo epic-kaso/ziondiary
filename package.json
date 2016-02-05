@@ -1,5 +1,5 @@
 {
-  "name": "testProject",
+  "name": "ZionDiary",
   "private": true,
   "version": "0.0.0",
   "description": "a Sails application",
@@ -30,7 +30,7 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/kasoprecede47/testProject.git"
+    "url": "git://github.com/kasoprecede47/ziondiary.git"
   },
   "author": "kasoprecede47",
   "license": ""
