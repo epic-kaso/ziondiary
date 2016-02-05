@@ -14,10 +14,22 @@ module.exports = {
     nickname: 'string'
     */
     nickname: 'string',
+
     phone: {
     	type: 'string',
     	unique: true
+    },
+
+    pastors: {
+    	collection: 'Pastor',
+    	via: "users"
+    },
+
+    my_audios: {
+    	collection: 'Audio',
+    	via: "users"
     }
+
   }),
   
   beforeCreate: require('waterlock').models.user.beforeCreate,

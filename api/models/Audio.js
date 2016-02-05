@@ -9,6 +9,32 @@ module.exports = {
 
   attributes: {
 
+  	name: {
+  		type: "String"
+  	},
+  	file: {
+  		type: "String"
+  	},
+  	
+  	size: "String",
+
+  	pastor: {
+  		model: "Pastor"
+  	},
+  	category: {
+  		model: "Category"
+  	},
+  	playlists: {
+  		collection: "Playlist",
+  		via: "audios"
+  	},
+  	channel: {
+  		model: "Channel"
+  	},
+  	users: {
+  		collection: 'User',
+  		via: 'my_audios'
+  	}
   }
 };
 

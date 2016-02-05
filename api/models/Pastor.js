@@ -8,7 +8,17 @@
 module.exports = {
 
   attributes: {
-
+  	name: "String",
+  	channel: {
+  		model: "Channel"
+  	},
+  	audios: {
+  		collection: "Audio"
+  	},
+  	users: {
+    	collection: 'User',
+    	via: "pastors"
+    }
   }
 };
 
